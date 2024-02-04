@@ -1,0 +1,123 @@
+%YAML 1.2
+---
+elementos:
+  - #Independiente
+    figura: punto
+    coordenadas: 
+      - 5
+      - 7
+    medida_coordenadas: mm
+
+  - &P02
+    figura: punto
+    coordenadas: 
+      - 20
+      - 20
+    medida_coordenadas: cm
+
+  - &P03
+    figura: punto
+    coordenadas: 
+      - 3
+      - 2
+    medida_coordenadas: dm
+
+  - &P04
+    figura: punto
+    coordenadas: 
+      - 5
+      - 2
+    medida_coordenadas: dm
+
+  - &P05
+    figura: punto
+    coordenadas: 
+      - 15
+      - 9
+    medida_coordenadas: m
+
+  - &P06
+    figura: punto
+    coordenadas: 
+      - 15
+      - 10
+    medida_coordenadas: m
+
+  - &P07
+    figura: punto
+    coordenadas: 
+      - 14
+      - 10
+    medida_coordenadas: m
+
+  - &P08
+    figura: punto
+    coordenadas: 
+      - 1
+      - 10
+    medida_coordenadas: m
+
+  - &P09
+    figura: punto
+    coordenadas: 
+      - 0
+      - 10
+    medida_coordenadas: m
+
+  - &P10
+    figura: punto
+    coordenadas: 
+      - 0
+      - 9
+    medida_coordenadas: m
+
+  - #Independiente
+    figura: circunferencia
+    centro: *P02
+    radio: 2
+    medida_radio: cm
+
+  - #Independiente
+    figura: recta
+    inicio: *P03
+    final: *P04
+
+  - &R02
+    figura: recta
+    inicio: *P05
+    final: *P06
+
+  - &R03
+    figura: recta
+    inicio: *P06
+    final: *P07
+
+  - &R04
+    figura: recta
+    inicio: *P08
+    final: *P09
+
+  - &R05
+    figura: recta
+    inicio: *P09
+    final: *P10
+  
+  - &E01
+    figura: esquina
+    rectas:
+      - *R02
+      - *R03
+  - &E02
+    figura: esquina
+    rectas:
+      - *R04
+      - *R05
+  
+  - #Independiente
+    figura: rectángulo
+    esquinas:
+      - *E01
+      - *E02
+
+
+    

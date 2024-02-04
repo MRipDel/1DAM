@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario>
+    <modelo_coches>
+        <modelo id="M01534">
+            <!--Si incluyéramos un .dtd podríamos nombrar cada nombre de los modelos de coche como una entidad propia, pero no es el caso.-->
+            <nombre_modelo>Corolla Verso</nombre_modelo>
+            <restantes>19</restantes>
+            <cilindrada>2000</cilindrada>
+            <caballos_vapor>180</caballos_vapor>
+            <vel_max>240</vel_max>
+            <n_plazas>5</n_plazas>
+        </modelo>
+        <modelo id="M03126">
+            <nombre_modelo>Auris</nombre_modelo>
+            <restantes>15</restantes>
+            <cilindrada>1500</cilindrada>
+            <caballos_vapor>160</caballos_vapor>
+            <vel_max>240</vel_max>
+            <n_plazas>5</n_plazas>
+        </modelo>
+    </modelo_coches>
+    <productos>
+        <!-- Considero necesario incluir tanto el modelo como el identificador único del coche porque entiendo que ambos sirven una función
+            identificadora del producto, y como tal, han de ser colocadas como atributos.-->
+        <producto modelo="M01534" id="P016458">
+            <km_recorridos>70000</km_recorridos>
+            <!-- En caso de no estar reservado, podría dejarse también vacío como he realizado en el siguiente ejercicio, pero al usar un 
+                booleano en caso de sí estar reservado, he visto pertinente usar su contraparte para lo contrario.-->
+            <reservado>false</reservado>
+        </producto>
+        <producto modelo="M03126" id="P037528">
+            <km_recorridos>0</km_recorridos>
+            <reservado>true</reservado>
+        </producto>
+    </productos>
+</concesionario>

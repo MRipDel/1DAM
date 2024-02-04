@@ -1,0 +1,29 @@
+%YAML 1.2
+---
+modelo_coches:
+  - #Aquí se referencia al objeto que guarda los datos del modelo. Podría usarse un id, pero como solo es un ejemplo, usaremos ''modelo''.
+    nombre modelo: Xxxxxxx
+    restantes": 00
+    cilindrada": 0000
+    caballos_vapor: 000
+    vel_max: 000
+    n_plazas: 00
+
+  - &modelo
+    nombre modelo: Auris
+    restantes": 15
+    cilindrada": 1500
+    caballos_vapor: 160
+    vel_max: 200
+    n_plazas: 5
+
+productos:
+  - modelo: #*modelo toda la información del objeto referenciado pasa a este valor.
+    id_producto: P0000000
+    km_recorridos: 000000
+    reservado: bool
+
+  - modelo: *modelo
+    id_producto: P037528
+    km_recorridos: 0
+    reservado: true

@@ -1,0 +1,58 @@
+%YAML 1.2
+---
+clientes: 
+  - #Aquí se referencia al objeto que guarda los datos del cliente. Podría usarse un id, pero como solo es un ejemplo, usaremos ''cliente''.
+    dni: 00000000-X
+    nombre: Nombre Apellido2 Apellido2
+    dirección:
+      - calle
+      - número
+      - bloque
+      - piso
+      - letra
+      - código_postal
+      - población
+
+  - &cliente
+    dni: 34239856-D
+    nombre: Enrique Fernández Pérez
+    dirección:
+      - c/Filadelfia
+      - 4
+      - 3
+      - bajo
+      - B
+      - 11408
+      - Jerez de la Frontera
+
+facturas:
+  - código_factura: F00000000
+    cliente: #*cliente toda la información del objeto referenciado pasa a este valor.
+    fecha_emisión: AAAA-MM-DD
+    producto1:
+      - nombre_producto
+      - cantidad
+      - precio_unitario
+      - IVA
+    producto2:
+      - nombre_producto
+      - cantidad
+      - precio_unitario
+      - IVA
+    descuento_factura: 00
+
+  - código_factura: F00253862
+    cliente: *cliente
+    fecha_emisión: 2023-10-11
+    producto1:
+      - Mini Babibel
+      - 1
+      - 2.50
+      - 04
+    producto2:
+      - Galletas de chocolate maxi
+      - 2
+      - 5.95
+      - 10
+    descuento_factura: 07
+

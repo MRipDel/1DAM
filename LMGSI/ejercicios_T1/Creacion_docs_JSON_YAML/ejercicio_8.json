@@ -1,0 +1,69 @@
+{
+    "modelo_coches":[
+        {
+            "nombre_modelo":"Xxxxxxx",
+            "id_modelo":"M00000",
+            "restantes":"00",
+            "cilindrada":"0000",
+            "caballos_vapor":"000",
+            "vel_max":"000",
+            "n_plazas":"00"
+        },
+
+        {
+            "nombre_modelo":"Auris",
+            "id_modelo":"M03126",
+            "restantes":15,
+            "cilindrada":1500,
+            "caballos_vapor":160,
+            "vel_max":180,
+            "n_plazas":5
+        }
+    ],
+
+    "clientes":[
+        {
+            "nombre_completo":["Nombre","Apellido_1","Apellido_2"],
+            "dni":"00000000X",
+            "id_cliente":"C0000000",
+            "dirección":["calle","número","bloque","piso","letra","código_postal","población"],
+            "teléfono": "00000000000"
+        },
+
+        {
+            "nombre_completo":["Fernanda","Martín","Collado"],
+            "dni":"32458712F",
+            "id_cliente":"C1476340",
+            "dirección":["c/Príncipe","12",null,null,null,11401,"Jerez de la Frontera"],
+            "teléfono": 34674158235
+        }
+    ],
+
+    
+    "productos":[
+        {
+            "modelo":"id_modelo",
+            "id_producto":"P0000000",
+            "km_recorridos":"000000",
+            "reservado":"bool",
+            "cliente":"id_cliente"
+        },
+
+        {
+            "modelo":"M03126",
+            "id_producto":"P037528",
+            "km_recorridos":0,
+            "reservado":true,
+            "cliente":"C1476340"
+        },
+
+        {
+            "modelo":"M03126",
+            "id_producto":"P037346",
+            "km_recorridos":75000,
+            "reservado":false,
+            "cliente":null
+        }
+        
+    ]
+}

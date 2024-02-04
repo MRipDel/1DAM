@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementos>
+    <!--He usado los tipos como atributo porque definen el contenido anidado. El identificador también lo he usado de atributo para que se haga referencia a todo lo anidado.-->
+    <figura tipo="punto" id="P01">
+        <coordenadas>
+            <x>5</x>
+            <y>7</y>
+        </coordenadas>
+        <medida_coordenadas>mm</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P02">
+        <coordenadas>
+            <x>20</x>
+            <y>20</y>
+        </coordenadas>
+        <medida_coordenadas>cm</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P03">
+        <coordenadas>
+            <x>3</x>
+            <y>2</y>
+        </coordenadas>
+        <medida_coordenadas>dm</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P04">
+        <coordenadas>
+            <x>5</x>
+            <y>2</y>
+        </coordenadas>
+        <medida_coordenadas>dm</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P05">
+        <coordenadas>
+            <x>15</x>
+            <y>9</y>
+        </coordenadas>
+        <medida_coordenadas>m</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P06">
+        <coordenadas>
+            <x>15</x>
+            <y>10</y>
+        </coordenadas>
+        <medida_coordenadas>m</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P07">
+        <coordenadas>
+            <x>14</x>
+            <y>10</y>
+        </coordenadas>
+        <medida_coordenadas>m</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P08">
+        <coordenadas>
+            <x>1</x>
+            <y>10</y>
+        </coordenadas>
+        <medida_coordenadas>m</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P09">
+        <coordenadas>
+            <x>0</x>
+            <y>10</y>
+        </coordenadas>
+        <medida_coordenadas>m</medida_coordenadas>
+    </figura>
+    <figura tipo="punto" id="P10">
+        <coordenadas>
+            <x>0</x>
+            <y>9</y>
+        </coordenadas>
+        <medida_coordenadas>m</medida_coordenadas>
+    </figura>
+    <!-- No hace falta un id en la circunferencia porque no hay otra en todo el documento Y no vamos a referenciarla.-->
+    <figura tipo="circunferencia">
+        <centro>P02</centro>
+        <radio>2</radio>
+        <medida_radio>cm</medida_radio>
+    </figura>
+    <figura tipo="recta" id="R01">
+        <inicio>P03</inicio>
+        <final>P04</final>
+    </figura>
+    <figura tipo="recta" id="R02">
+        <inicio>P05</inicio>
+        <final>P06</final>
+    </figura>
+    <figura tipo="recta" id="R03">
+        <inicio>P06</inicio>
+        <final>P07</final>
+    </figura>
+    <figura tipo="recta" id="R04">
+        <inicio>P08</inicio>
+        <final>P09</final>
+    </figura>
+    <figura tipo="recta" id="R05">
+        <inicio>P09</inicio>
+        <final>P10</final>
+    </figura>
+    <figura tipo="esquina" id="E01">
+        <rectas>
+            <vertical>R02</vertical>
+            <horizontal>R03</horizontal>
+        </rectas>
+    </figura>
+    <figura tipo="esquina" id="E02">
+        <rectas>
+            <vertical>R04</vertical>
+            <horizontal>R05</horizontal>
+        </rectas>
+    </figura>
+    <!--Mismo caso que el de la circunferencia. Solo hay una figura tipo rectángulo Y no se referencia.-->
+    <figura tipo="rectángulo">
+        <esquinas>
+            <sup_derecha>E01</sup_derecha>
+            <sup_izquierda>E02</sup_izquierda>
+        </esquinas>
+    </figura>
+</elementos>

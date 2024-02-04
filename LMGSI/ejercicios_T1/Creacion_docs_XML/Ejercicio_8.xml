@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario>
+    <modelo_coches>
+        <modelo id="M01534">
+            <nombre_modelo>Corolla Verso</nombre_modelo>
+            <restantes>19</restantes>
+            <cilindrada>2000</cilindrada>
+            <caballos_vapor>180</caballos_vapor>
+            <vel_max>240</vel_max>
+            <n_plazas>5</n_plazas>
+        </modelo>
+        <modelo id="M03126">
+            <nombre_modelo>Auris</nombre_modelo>
+            <restantes>15</restantes>
+            <cilindrada>1500</cilindrada>
+            <caballos_vapor>160</caballos_vapor>
+            <vel_max>240</vel_max>
+            <n_plazas>5</n_plazas>
+        </modelo>
+    </modelo_coches>
+    <clientes>
+        <cliente id="C6547913">
+            <!-- Incluir el nombre como un conjunto de elementos anidados es una opción tan válida como usar
+                una sola etiqueta para nombre y apellidos, pero prefiero esta opción por organizarlo mejor.
+                Uso la otra en el ejercicio 5 tan solo por dar a entender que sé que ambas opciones son válidas.  -->
+            <nombre_completo>
+                <nombre>Manuela</nombre>
+                <apellido_1>Quintana</apellido_1>
+                <apellido_2>Gómez</apellido_2>
+            </nombre_completo>
+            <dni>32674356R</dni>
+            <direccion>
+                <calle>Piamonte</calle>
+                <numero>2</numero>
+                <bloque>12</bloque>
+                <piso>10</piso>
+                <letra>D</letra>
+                <codigo_postal>11405</codigo_postal>
+                <poblacion>Jerez de la Frontera</poblacion>
+            </direccion>
+            <telefono>956322626</telefono>
+        </cliente>
+        <cliente  id="C1476340">
+            <nombre_completo>
+                <nombre>Fernanda</nombre>
+                <apellido_1>Martín</apellido_1>
+                <apellido_2>Collado</apellido_2>
+            </nombre_completo>
+            <dni>32458712F</dni>
+            <direccion>
+                <calle>Príncipe</calle>
+                <numero>12</numero>
+                <bloque></bloque>
+                <piso></piso>
+                <letra></letra>
+                <codigo_postal>11401</codigo_postal>
+                <poblacion>Jerez de la Frontera</poblacion>
+            </direccion>
+            <telefono>34674158235</telefono>
+        </cliente>
+    </clientes>
+    <productos>
+        <producto modelo="M01534" id="P016458">
+            <km_recorridos>70000</km_recorridos>
+            <reservado></reservado>
+        </producto>
+        <!-- Mismo modelo que el anterior, pero distinto coche. Caso por el cual justifico ambas etiquetas como identificadores, ayuda a ordenar.
+        El contenido de la etiqueta reservado, en caso de contener algo, es siempre un id de cliente en este ejercicio en concreto. -->
+        <producto modelo="M01534" id="P016459">
+            <km_recorridos>30000</km_recorridos>
+            <reservado>C6547913</reservado>
+        </producto>
+        <producto modelo="M03126" id="P037528">
+            <km_recorridos>0</km_recorridos>
+            <reservado>C1476340</reservado>
+        </producto>
+    </productos>
+</concesionario>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+    <clientes>
+        <cliente id="C042186">
+            <dni>34741293-X</dni>
+            <nombre>Daniela Hernández Caravaca</nombre>
+            <direccion>
+                <calle>Playa Santa María</calle>
+                <numero>17</numero>
+                <bloque></bloque>
+                <piso></piso>
+                <letra></letra>
+                <codigo_postal>11406</codigo_postal>
+                <poblacion>Jerez de la Frontera</poblacion>
+            </direccion>
+        </cliente>
+        <cliente id="C235635">
+            <dni>34239856-D</dni>
+            <nombre>Enrique Fernández Pérez</nombre>
+            <direccion>
+                <calle>Filadelfia</calle>
+                <numero>4</numero>
+                <bloque>3</bloque>
+                <piso>bajo</piso>
+                <letra>B</letra>
+                <codigo_postal>11408</codigo_postal>
+                <poblacion>Jerez de la Frontera</poblacion>
+            </direccion>
+        </cliente>
+    </clientes>
+    <facturas>
+        <factura id="F01264576">
+            <cliente>C042186</cliente>
+            <fecha_emision>2023-04-23</fecha_emision>
+            <producto1>
+                <nombre_producto>Colgate Max</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio_unitario>3.32</precio_unitario>
+                <IVA>10</IVA>
+            </producto1>
+            <producto2>
+                <nombre_producto>Croissant mantequilla</nombre_producto>
+                <cantidad>3</cantidad>
+                <precio_unitario>0.99</precio_unitario>
+                <IVA>10</IVA>
+            </producto2>
+            <descuento_factura>07</descuento_factura>
+        </factura>
+        <factura id="F00253862">
+            <cliente>C235635</cliente>
+            <fecha_emision>2023-10-11</fecha_emision>
+            <producto1>
+                <nombre_producto>Mini Babibel</nombre_producto>
+                <cantidad>1</cantidad>
+                <precio_unitario>2.50</precio_unitario>
+                <IVA>04</IVA>
+            </producto1>
+            <producto2>
+                <nombre_producto>Galletas de chocolate maxi</nombre_producto>
+                <cantidad>2</cantidad>
+                <precio_unitario>5.95</precio_unitario>
+                <IVA>10</IVA>
+            </producto2>
+            <descuento_factura>07</descuento_factura>
+        </factura>
+    </facturas>
+</empresa>

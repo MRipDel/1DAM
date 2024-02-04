@@ -1,0 +1,7 @@
+Programación estructurada
+
+Bucles: Nº fijo de pasos--> 	Bucle FOR. Inicio, fin, salto. ejemplo buble for en Java:  for (int i=0;i>100;i++){}
+
+	Condicionales ---> 	While La condición se evalúa al principio.
+				Do While La condición se evalúa al final.
+

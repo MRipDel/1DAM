@@ -1,0 +1,133 @@
+{
+    "elementos":[
+        {
+            "figura":"punto",
+            "id":"P01",
+            "coordenadas":[5,7],
+            "medida_coordenadas":"mm"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P02",
+            "coordenadas":[20,20],
+            "medida_coordenadas":"cm"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P03",
+            "coordenadas":[3,2],
+            "medida_coordenadas":"dm"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P04",
+            "coordenadas":[5,2],
+            "medida_coordenadas":"dm"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P05",
+            "coordenadas":[15,9],
+            "medida_coordenadas":"m"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P06",
+            "coordenadas":[15,10],
+            "medida_coordenadas":"m"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P07",
+            "coordenadas":[14,10],
+            "medida_coordenadas":"m"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P08",
+            "coordenadas":[1,10],
+            "medida_coordenadas":"m"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P09",
+            "coordenadas":[0,10],
+            "medida_coordenadas":"m"
+        },
+
+        {
+            "figura":"punto",
+            "id":"P10",
+            "coordenadas":[0,9],
+            "medida_coordenadas":"m"
+        },
+
+        {
+            "figura":"circunferencia",
+            "centro":"P02",
+            "radio":2,
+            "medida_radio":"cm"
+        },
+
+        {
+            "figura":"recta",
+            "id":"R01",
+            "inicio":"P03",
+            "final":"P04"
+        },
+
+        {
+            "figura":"recta",
+            "id":"R02",
+            "inicio":"P05",
+            "final":"P06"
+        },
+
+        {
+            "figura":"recta",
+            "id":"R03",
+            "inicio":"P06",
+            "final":"P07"
+        },
+
+        {
+            "figura":"recta",
+            "id":"R04",
+            "inicio":"P08",
+            "final":"P09"
+        },
+
+        {
+            "figura":"recta",
+            "id":"R05",
+            "inicio":"P09",
+            "final":"P10"
+        },
+
+        {
+            "figura":"esquina",
+            "id":"E01",
+            "rectas":["R02","R03"]
+        },
+
+        {
+            "figura":"esquina",
+            "id":"E02",
+            "rectas":["R04","R05"]
+        },
+
+        {
+            "figura":"rectángulo",
+            "esquinas":["E01","E02"]
+        }
+    ]
+
+}

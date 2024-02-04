@@ -1,0 +1,37 @@
+{
+
+    "clientes":[
+        {
+            "dni":"00000000-X",
+            "nombre":"Nombre Apellido2 Apellido2",
+            "id_cliente":"C000000",
+            "dirección":["calle","número","bloque","piso","letra","código_postal","población"]
+        },
+
+        {
+        "dni":"34239856-D",
+        "nombre":"Enrique Fernández Pérez",
+        "id_cliente":"C235635",
+        "dirección":["c/Filadelfia","4","3","bajo","B","11408","Jerez de la Frontera"]
+        }
+    ],
+
+    "facturas":[
+        {
+            "código_factura":"F00000000",
+            "cliente":"id_cliente",
+            "fecha_emisión":"AAAA-MM-DD",
+            "producto1":["nombre_producto","cantidad","precio_unitario","IVA"],
+            "producto2":["nombre_producto","cantidad","precio_unitario","IVA"],
+            "descuento_factura":"00"
+        },
+        {
+            "código_factura":"F00253862",
+            "cliente":"C235635",
+            "fecha_emisión":"2023-10-11",
+            "producto1":["Mini Babibel","1","2.50","04"],
+            "producto2":["Galletas de chocolate maxi","2","5.95","10"],
+            "descuento_factura":"07"
+        }
+    ]
+}

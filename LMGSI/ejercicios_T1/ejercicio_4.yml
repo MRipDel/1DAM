@@ -1,0 +1,14 @@
+%YAML 1.2
+--- !!map
+
+!!str nombre: !!str Pedro Martínez Alvárez
+!!str edad: !!int 32
+!!str casado: !!bool true
+!!str nacimiento: 1991-05-07
+!!str defuncion: !!null null
+direccion !!map:
+  !!str calle: !!str Callo
+  !!str num: !!int 5
+  !!str cp: !!int 12345
+
+...
